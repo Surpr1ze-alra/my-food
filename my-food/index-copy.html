@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/index.js" defer></script>
     <title>Delivery Food</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
                             <img src="./img/icon 1.png" alt="user">
                             Войти
                         </button>
-                        <button class="btn btn-outline">
+                        <button class="btn btn-outline" id="cart-button">
                             <img src="./img/icon 2.png" alt="user">
                             Корзина
                         </button>
@@ -189,76 +190,76 @@
             </section>
         </main>
 
-        <div class="cart-model_owerlay">
-        <div class="cart-modul">
-            <div class="cart-modul-header">
-                <h2 class="cart-modul-header-title">Корзина</h2>
-                <span class="cart-modul-header-close">
-                    <img src="./img/Vector2.png" alt="close">
-                </span>
-            </div>
-            <div class="cart-modul-body">
-                <div class="cart-item">
-                    <p class="cart-item-title">Ролл угорь стандарт</p>
-                    <div class="cart-item-controls">
-                        <div class="cart-item-controls-price">250 ₽</div>
-                        <button class="btn btn-outline">-</button>
-                        <div class="cart-item-controls-count">1</div>
-                        <button class="btn btn-outline">+</button>
+        <div class="cart-modal_overlay">
+            <div class="cart-modal">
+                <div class="cart-modal-header">
+                    <h2 class="cart-modal-header-title">Корзина</h2>
+                    <span class="cart-modal-header-close">
+                        <img src="./img/Vector2.png" alt="close">
+                    </span>
+                </div>
+                <div class="cart-modal-body">
+                    <div class="cart-item">
+                        <p class="cart-item-title">Ролл угорь стандарт</p>
+                        <div class="cart-item-controls">
+                            <div class="cart-item-controls-price">250 ₽</div>
+                            <button class="btn btn-outline">-</button>
+                            <div class="cart-item-controls-count">1</div>
+                            <button class="btn btn-outline">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <p class="cart-item-title">Ролл угорь стандарт</p>
+                        <div class="cart-item-controls">
+                            <div class="cart-item-controls-price">250 ₽</div>
+                            <button class="btn btn-outline">-</button>
+                            <div class="cart-item-controls-count">1</div>
+                            <button class="btn btn-outline">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <p class="cart-item-title">Ролл угорь стандарт</p>
+                        <div class="cart-item-controls">
+                            <div class="cart-item-controls-price">250 ₽</div>
+                            <button class="btn btn-outline">-</button>
+                            <div class="cart-item-controls-count">1</div>
+                            <button class="btn btn-outline">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <p class="cart-item-title">Ролл угорь стандарт</p>
+                        <div class="cart-item-controls">
+                            <div class="cart-item-controls-price">250 ₽</div>
+                            <button class="btn btn-outline">-</button>
+                            <div class="cart-item-controls-count">1</div>
+                            <button class="btn btn-outline">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <p class="cart-item-title">Ролл угорь стандарт</p>
+                        <div class="cart-item-controls">
+                            <div class="cart-item-controls-price">250 ₽</div>
+                            <button class="btn btn-outline">-</button>
+                            <div class="cart-item-controls-count">1</div>
+                            <button class="btn btn-outline">+</button>
+                        </div>
                     </div>
                 </div>
-                <div class="cart-item">
-                    <p class="cart-item-title">Ролл угорь стандарт</p>
-                    <div class="cart-item-controls">
-                        <div class="cart-item-controls-price">250 ₽</div>
-                        <button class="btn btn-outline">-</button>
-                        <div class="cart-item-controls-count">1</div>
-                        <button class="btn btn-outline">+</button>
+                <div class="cart-modal-footer">
+                    <div class="cart-modal-footer-price">
+                        1250 ₽
                     </div>
-                </div>
-                <div class="cart-item">
-                    <p class="cart-item-title">Ролл угорь стандарт</p>
-                    <div class="cart-item-controls">
-                        <div class="cart-item-controls-price">250 ₽</div>
-                        <button class="btn btn-outline">-</button>
-                        <div class="cart-item-controls-count">1</div>
-                        <button class="btn btn-outline">+</button>
+                    <div class="cart-modal-footer-controls">
+                        <button class="btn btn-primary">
+                            Оформить заказ
+                        </button>
+                        <button class="btn btn-outline">
+                            Отмена
+                        </button>
                     </div>
-                </div>
-                <div class="cart-item">
-                    <p class="cart-item-title">Ролл угорь стандарт</p>
-                    <div class="cart-item-controls">
-                        <div class="cart-item-controls-price">250 ₽</div>
-                        <button class="btn btn-outline">-</button>
-                        <div class="cart-item-controls-count">1</div>
-                        <button class="btn btn-outline">+</button>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <p class="cart-item-title">Ролл угорь стандарт</p>
-                    <div class="cart-item-controls">
-                        <div class="cart-item-controls-price">250 ₽</div>
-                        <button class="btn btn-outline">-</button>
-                        <div class="cart-item-controls-count">1</div>
-                        <button class="btn btn-outline">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-modul-footer">
-                <div class="cart-modul-footer-price">
-                    1250 ₽
-                </div>
-                <div class="cart-modul-footer-controls">
-                    <button class="btn btn-primary">
-                        Оформить заказ
-                    </button>
-                    <button class="btn btn-outline">
-                        Отмена
-                    </button>
                 </div>
             </div>
         </div>
-    </div>
 
         <footer class="footer">
             <div class="container">
